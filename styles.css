@@ -9,18 +9,18 @@
 body {
   background-color: rgb(247, 183, 65);
   color: #000;
-  /* flex-direction: column; */
   font-family: "Press Start 2P";
   height: 100vh;
   margin: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
   text-align: center;
 }
 
 h1 {
   line-height: 1.4;
 }
-.container {
+
+.pages {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@ h1 {
   width: 100vw;
 }
 
-.container.up {
+.pages.up {
   margin-top: -100vh;
 }
 
@@ -56,9 +56,24 @@ h1 {
   border: none;
 }
 
+.chooseDoggieBtn:hover {
+  cursor: pointer;
+}
+
 .chooseDoggieBtn img {
   width: 100%;
   max-width: 400px;
+}
+
+.chooseDoggieBtn img:hover {
+  transform: scale(1.1);
+  transition: transform .3s;
+}
+
+.chooseDoggieBtn img:focus,
+.chooseDoggieBtn:focus,
+.btn:focus {
+  outline: none;
 }
 
 .chooseDoggieBtn p {
