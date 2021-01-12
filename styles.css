@@ -110,15 +110,15 @@ h1 {
 }
 
 #annoyingMsg {
-	line-height: 2;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transition: transform 0.4s ease-in;
-	transform: translate(-50%, -150%);
-	opacity: 0;
-	text-align: center;
-	width: 100%;
+  line-height: 2;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: transform 0.4s ease-in;
+  transform: translate(-50%, -150%);
+  opacity: 0;
+  text-align: center;
+  width: 100%;
 }
 
 #annoyingMsg.visible {
@@ -128,22 +128,22 @@ h1 {
 
 .doggie {
   display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	transform: translate(-50%, -50%) scale(1);
-	cursor: pointer;
-	width: 100px;
-	height: 100px;
-	transition: transform 0.3s ease-out;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease-out;
 }
 
 .doggie.catched {
-	transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .doggie img {
-	object-fit: contain;
-	width: 100px;
-	height: 100px;
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
 }

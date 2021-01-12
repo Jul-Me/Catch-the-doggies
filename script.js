@@ -25,6 +25,7 @@ chooseDoggieBtn.forEach((btn) => {
     };
 
     pages[1].classList.add('up');
+
     setTimeout(createDoggie, 1000);
     startGame();
   });
@@ -65,9 +66,11 @@ const createDoggie = () => {
 function catchDoggie() {
   increaseScore();
   this.classList.add('catched');
+
   setTimeout(() => {
     this.remove();
   }, 2000);
+
   addDoggies();
 }
 
